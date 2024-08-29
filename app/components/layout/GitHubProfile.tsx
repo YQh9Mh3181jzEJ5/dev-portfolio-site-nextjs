@@ -5,7 +5,7 @@ import React from "react";
 
 const GitHubProfile = () => {
   return (
-    <header className="flex flex-col items-center p-4 bg-blue-600 w-full h-full gap-2">
+    <header className="flex flex-col items-center p-4 w-full h-full gap-2">
       <Image
         src="/images/profile.png"
         alt="GitHubProfile"

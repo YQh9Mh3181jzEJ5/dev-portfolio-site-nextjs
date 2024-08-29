@@ -2,12 +2,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { defaultImage } from "@/app/constants/defaultImage";
+import { githubUrl } from "@/app/constants/githubUrl";
 
-const PortfolioItem = ({ ...props }) => {
+type PortfolioItemProps = {
+  name: string;
+  url: string;
+};
+
+const PortfolioItem = ({ name, url }: PortfolioItemProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <Link
-        href={"/"}
+        href={`${githubUrl}/${url}`}
         className="block w-full h-60 relative"
         target="_blank"
         rel="noopener noreferrer"
@@ -21,7 +27,7 @@ const PortfolioItem = ({ ...props }) => {
           style={{ objectFit: "cover" }}
         />
         <div className="p-4 absolute bottom-0 left-0 right-0 bg-white bg-opacity-75">
-          <h3 className="text-lg font-semibold mb-1">test</h3>
+          <h3 className="text-lg font-semibold mb-1">{name}</h3>
           <span className="text-sm text-gray-500 font-light">test</span>
         </div>
       </Link>

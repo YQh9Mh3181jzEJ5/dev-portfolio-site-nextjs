@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 個人ポートフォリオ & ブログサイト
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-13.0-blueviolet)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC)
 
-First, run the development server:
+このプロジェクトは、私の個人用ポートフォリオとブログサイトです。Next.js を使用して構築されています。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 特徴
+
+- 📊 ポートフォリオのショーケース
+- 📝 Markdown で書かれたブログ記事
+- 🎨 Tailwind CSS によるレスポンシブデザイン
+- 🚀 Next.js による高速パフォーマンス
+- 📱 モバイルフレンドリーなレイアウト
+
+## 🛠 技術スタック
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Gray Matter](https://github.com/jonschlinkert/gray-matter) （マークダウンのメタデータ解析）
+- [Remark](https://github.com/remarkjs/remark) （マークダウンの HTML 変換）
+
+## 📁 プロジェクト構造
+
+```shell
+app/
+├── blog/
+├── components/
+│   ├── blog/
+│   ├── common/
+│   ├── layout/
+│   └── portfolio/
+├── constants/
+├── lib/
+├── posts/
+└── type/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 デプロイ
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+このプロジェクトは Vercel にデプロイしています。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 👤 作者
 
-## Learn More
+YQh9Mh3181jzEJ5
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_注意: このプロジェクトは個人的な使用を目的としています。_

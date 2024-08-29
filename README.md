@@ -6,6 +6,8 @@
 
 このプロジェクトは、私の個人用ポートフォリオとブログサイトです。Next.js を使用して構築されています。
 
+https://next-dev-portfolio-ruby.vercel.app/
+
 ## 🌟 特徴
 
 - 📊 ポートフォリオのショーケース

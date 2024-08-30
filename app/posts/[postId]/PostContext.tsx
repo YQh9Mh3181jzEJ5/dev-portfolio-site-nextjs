@@ -20,24 +20,23 @@ export default function PostContent({ post }: { post: any }) {
 
   return (
     <article className="flex flex-col max-w-4xl mx-auto py-8">
-      {post.thumbnail && (
-        <Image
-          src={post.thumbnail}
-          alt={post.title}
-          width={800}
-          height={400}
-          className="w-full h-64 object-cover rounded-lg mb-8"
-        />
-      )}
       <Card>
         <CardHeader>
-          <CardTitle>
-            <h1 className="text-4xl font-bold p-8 text-center">{post.title}</h1>
+          <CardTitle className="text-4xl font-bold p-8 text-center">
+            {post.title}
           </CardTitle>
-          <CardDescription>
-            <p className="text-gray-500 dark:text-gray-400 mb-4">
-              投稿日: {post.date}
-            </p>
+          {post.thumbnail && (
+            <Image
+              src={`/images/${post.thumbnail}.jpg`}
+              alt={post.title}
+              width={800}
+              height={400}
+              priority
+              className="w-full h-64 object-cover rounded-lg mb-8"
+            />
+          )}
+          <CardDescription className="text-gray-500 dark:text-gray-400 mb-4">
+            投稿日: {post.date}
           </CardDescription>
         </CardHeader>
 

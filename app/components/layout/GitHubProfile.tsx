@@ -45,7 +45,7 @@ const GitHubProfile = () => {
             width={360}
             height={360}
             priority
-            className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 xl:w-96 xl:h-96"
+            className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-md"
           />
           <Link
             href={`https://github.com/${githubName}`}

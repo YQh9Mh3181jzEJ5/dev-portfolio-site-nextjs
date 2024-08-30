@@ -33,7 +33,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
           prefetch={false}
-          className="text-white hover:text-slate-300 flex items-center jusityf-between gap-2"
+          className="flex items-center jusityf-between gap-2"
         >
           <FaGithub aria-hidden="true" />
           My GitHub

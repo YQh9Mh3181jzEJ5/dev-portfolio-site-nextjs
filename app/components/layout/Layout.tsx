@@ -5,14 +5,20 @@ import Footer from "./Footer";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    // <main className="flex min-h-screen w-full flex-col items-center overflow-x-hidden">
-    <main className="flex min-h-screen w-full flex-col items-center">
-      <Header />
-      <div className="w-full">
-        <GitHubProfile />
-        <div className="flex flex-col gap-4">{children}</div>
+    <main className="flex min-h-screen w-full flex-col items-center relative">
+      <div className="fixed inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/images/bg-tokyo.jpg')` }}
+        />
+        <div className="absolute inset-0 bg-black opacity-10" />
       </div>
-      <Footer />
+      <div className="w-full z-10 relative">
+        <Header />
+        <GitHubProfile />
+        <div className="flex flex-col">{children}</div>
+        <Footer />
+      </div>
     </main>
   );
 }

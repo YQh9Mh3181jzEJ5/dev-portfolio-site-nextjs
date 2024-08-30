@@ -5,9 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-2 text-sm font-light text-gray-500">
+    <footer className="py-2 text-sm font-light text-gray-500 bg-background dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <span className="mr-1">&copy; {currentYear}</span>
           <Link
             href={`https://github.com/${githubName}`}

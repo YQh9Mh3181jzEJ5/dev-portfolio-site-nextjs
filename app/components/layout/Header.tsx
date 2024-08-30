@@ -17,7 +17,7 @@ import {
 const Header = () => {
   const { setTheme } = useTheme();
   return (
-    <div className="flex items-center justify-between w-full px-6 py-4">
+    <div className="flex items-center justify-between w-full px-6 py-4 bg-background dark:bg-gray-800">
       <div className="flex items-center justify-between gap-2">
         <Avatar>
           <AvatarImage src="/images/profile.png" />

@@ -5,6 +5,7 @@ interface SectionContainerProps {
   title: string;
   variant: string;
   description: string;
+  isTransparent?: boolean;
 }
 
 const SectionContainer: React.FC<SectionContainerProps> = ({
@@ -12,6 +13,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
   title,
   description,
   variant,
+  isTransparent = false,
 }: SectionContainerProps) => {
   const getIcon = () => {
     switch (title) {
@@ -25,18 +27,30 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
         return null;
     }
   };
+
+  const textColorClass =
+    title === "About Me" ? "text-gray-300" : "text-gray-500 dark:text-gray-400";
+
   return (
     <div
       className={`flex flex-col items-center min-h-full py-12 md:py-24 lg:py-32 ${
-        variant === "secondary" ? "bg-background" : "bg-secondary"
+        isTransparent
+          ? "bg-transparent"
+          : variant === "secondary"
+          ? "bg-background"
+          : "bg-secondary"
       }`}
     >
       <div className="w-full max-w-6xl mx-auto px-4">
-        <h2 className="p-6 flex items-center gap-2 w-full max-w-6xl mx-auto justify-center text-3xl font-bold  sm:text-5xl">
+        <h2
+          className={`p-6 ${textColorClass} flex items-center gap-2 w-full max-w-6xl mx-auto justify-center text-3xl font-bold  sm:text-5xl`}
+        >
           {getIcon()}
           {title}
         </h2>
-        <p className="mb-8 text-gray-500 text-center text-sm md:text-base lg:text-xl !leading-loose">
+        <p
+          className={`mb-8 ${textColorClass} text-center text-sm md:text-base lg:text-xl !leading-loose`}
+        >
           {description}
         </p>
       </div>

@@ -42,14 +42,20 @@ const PortfolioItem = ({ name, url, txt, badges }: PortfolioItemProps) => {
         </Link>
       </CardContent>
       <CardHeader className="px-6 pt-0 pb-6">
-        <CardTitle className="text-xl font-semibold">{name}</CardTitle>
-        <CardDescription className="text-sm text-gray-600">
+        <CardTitle className="text-xl font-semibold text-gray-100 dark:text-gray-300">
+          {name}
+        </CardTitle>
+        <CardDescription className="text-sm text-gray-600 dark:text-gray-400 ">
           {txt}
         </CardDescription>
       </CardHeader>
       <CardFooter className="flex flex-wrap gap-2">
         {badges.map((badge, index) => (
-          <Badge key={index} variant="outline">
+          <Badge
+            key={index}
+            variant="outline"
+            className="text-gray-400 font-normal"
+          >
             {badge}
           </Badge>
         ))}

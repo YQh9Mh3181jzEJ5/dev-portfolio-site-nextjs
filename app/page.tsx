@@ -16,6 +16,7 @@ export default async function Home() {
 その後、Web系の企業に転職し主にFront-Endのタスクを担当しました。
 目標はフルスタックエンジニアとして仕事を回せるレベルになること。
 最近はTypeScriptにどっぷりハマっています。`}
+        isTransparent={true}
       ></SectionContainer>
       <SectionContainer
         title="Portfolio Highlights"

@@ -2,17 +2,12 @@ import { PageProvider } from "./contexts/PageContext";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
-
-import { Noto_Sans_JP } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import BackgroundImage from "./components/layout/BackgroundImage";
 
-const notoSansJP = Noto_Sans_JP({
-  display: "swap",
-  preload: false,
-  variable: "--font-noto-sans-jp",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -26,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={notoSansJP.className}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

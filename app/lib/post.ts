@@ -3,6 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 
 const postsDirectory = path.join(process.cwd(), "app", "posts");
 
@@ -22,7 +23,8 @@ export async function getPostsData() {
           const matterResult = matter(fileContents);
 
           const processedContent = await remark()
-            .use(html)
+            .use(html, { sanitize: false })
+            .use(gfm)
             .process(matterResult.content);
           const contentHtml = processedContent.toString();
 

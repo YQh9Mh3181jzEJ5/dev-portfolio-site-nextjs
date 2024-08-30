@@ -40,6 +40,7 @@ export default function PostContent({ post }: { post: any }) {
             </p>
           </CardDescription>
         </CardHeader>
+
         <CardContent>
           <div
             className="prose prose-lg prose-blue dark:prose-invert flex-grow"

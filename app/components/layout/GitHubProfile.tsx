@@ -9,23 +9,23 @@ import { FaGithub } from "react-icons/fa";
 const GitHubProfile = () => {
   return (
     <div
-      className="flex flex-col items-center justify-between p-8 w-full
+      className="flex items-center justify-between p-8 w-full
                       sm:py-12 md:py-16 lg:py-24 xl:py-32
                       sm:flex-row sm:items-start
                       bg-background dark:bg-gray-900"
     >
-      <div className="flex items-center justify-between container">
-        <div className="flex flex-col gap-4 mb-8 sm:mb-0">
+      <div className="flex flex-col md:flex-row items-center justify-between container  ">
+        <div className="flex flex-col gap-4 mb-8 md:mb-0 ">
           <h1
             className="text-4xl font-bold tracking-tighter
-                       sm:text-5xl md:text-6xl lg:text-7xl"
+                       sm:text-5xl md:text-6xl lg:text-7xl text-center md:text-left"
           >
             はじめまして！
           </h1>
-          <p className="max-w-[600px] mb-2 text-gray-500 dark:text-gray-400 text-sm md:text-base lg:text-xl !leading-loose">
+          <p className="max-w-[600px] mb-2 text-gray-500 dark:text-gray-400 text-sm md:text-base lg:text-xl !leading-loose  text-center md:text-left">
             Web系エンジニアです。このサイトでは今まで作った作品とブログ記事を投稿しています。好きな言語はTypeScriptです！
           </p>
-          <div className="flex">
+          <div className="flex flex-col gap-2 sm:gap-2 md:flex-row ">
             <Button
               asChild
               variant="outline"
@@ -42,10 +42,10 @@ const GitHubProfile = () => {
           <Image
             src="/images/profile.png"
             alt="GitHubProfile"
-            width={500}
-            height={500}
+            width={360}
+            height={360}
             priority
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
+            className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 xl:w-96 xl:h-96"
           />
           <Link
             href={`https://github.com/${githubName}`}

@@ -5,9 +5,9 @@ import Footer from "./Footer";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen w-full flex-col items-center ">
       <Header />
-      <div className="container mb-2">
+      <div className="mb-2 w-full">
         <GitHubProfile />
         <div className="flex flex-col gap-4">{children}</div>
       </div>

@@ -3,35 +3,58 @@ import Link from "next/link";
 import Image from "next/image";
 import { defaultImage } from "@/app/constants/defaultImage";
 import { githubUrl } from "@/app/constants/githubUrl";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 type PortfolioItemProps = {
   name: string;
   url: string;
+  txt: string;
+  badges: string[];
 };
 
-const PortfolioItem = ({ name, url }: PortfolioItemProps) => {
+const PortfolioItem = ({ name, url, txt, badges }: PortfolioItemProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <Link
-        href={`${githubUrl}/${url}`}
-        className="block w-full h-60 relative"
-        target="_blank"
-        rel="noopener noreferrer"
-        prefetch={false}
-      >
-        <Image
-          src={defaultImage}
-          alt="my-portfoli"
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          style={{ objectFit: "cover" }}
-        />
-        <div className="p-4 absolute bottom-0 left-0 right-0 bg-white bg-opacity-75">
-          <h3 className="text-lg font-semibold mb-1">{name}</h3>
-          <span className="text-sm text-gray-500 font-light">test</span>
-        </div>
-      </Link>
-    </div>
+    <Card className="overflow-hidden flex flex-col justify-between">
+      <CardContent className="p-6">
+        <Link
+          href={`${githubUrl}/${url}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          prefetch={false}
+        >
+          <div className="relative h-48 w-full rounded-md overflow-hidden">
+            <Image
+              src={defaultImage}
+              alt="portfolio-image"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        </Link>
+      </CardContent>
+      <CardHeader className="px-6 pt-0 pb-6">
+        <CardTitle className="text-xl font-semibold">{name}</CardTitle>
+        <CardDescription className="text-sm text-gray-600">
+          {txt}
+        </CardDescription>
+      </CardHeader>
+      <CardFooter className="flex flex-wrap gap-2">
+        {badges.map((badge, index) => (
+          <Badge key={index} variant="outline">
+            {badge}
+          </Badge>
+        ))}
+      </CardFooter>
+    </Card>
   );
 };
 

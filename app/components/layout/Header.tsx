@@ -1,4 +1,5 @@
 import { githubName } from "@/app/constants/githubName";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -7,13 +8,10 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between w-full px-6 py-4">
       <div className="flex items-center justify-between gap-2">
-        <Image
-          src="/images/profile.png"
-          alt="GitHubProfile"
-          width={36}
-          height={36}
-          className="rounded-full"
-        />
+        <Avatar>
+          <AvatarImage src="/images/profile.png" />
+          <AvatarFallback>YQh9Mh3181jzEJ5</AvatarFallback>
+        </Avatar>
         <div>Portfolio Site</div>
       </div>
       <Link

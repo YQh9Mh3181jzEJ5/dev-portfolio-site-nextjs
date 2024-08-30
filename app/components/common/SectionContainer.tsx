@@ -29,7 +29,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
   };
 
   const textColorClass =
-    title === "About Me" ? "text-gray-300" : "text-gray-500 dark:text-gray-400";
+    title === "About Me" ? "text-gray-300" : "text-gray-700 dark:text-gray-400";
 
   return (
     <div

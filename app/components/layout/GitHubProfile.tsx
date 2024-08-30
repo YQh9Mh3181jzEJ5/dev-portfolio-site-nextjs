@@ -8,11 +8,11 @@ import { FaGithub } from "react-icons/fa";
 
 const GitHubProfile = () => {
   return (
-    <header
+    <div
       className="flex flex-col items-center justify-between p-8 w-full
                       sm:py-12 md:py-16 lg:py-24 xl:py-32
                       sm:flex-row sm:items-start
-                      bg-background dark:bg-gray-800"
+                      bg-background dark:bg-gray-900"
     >
       <div className="flex items-center justify-between container">
         <div className="flex flex-col gap-4 mb-8 sm:mb-0">
@@ -59,7 +59,7 @@ const GitHubProfile = () => {
           </Link>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

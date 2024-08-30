@@ -1,6 +1,6 @@
 "use client";
 
-import { portfolioItems } from "./portfolioData";
+import { portfolioItems } from "../../constants/portfolioData";
 import PortfolioItem from "./PortfolioItem";
 import {
   Carousel,

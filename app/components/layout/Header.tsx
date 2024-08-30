@@ -17,13 +17,15 @@ import {
 const Header = () => {
   const { setTheme } = useTheme();
   return (
-    <div className="flex items-center justify-between w-full px-6 py-4 bg-background dark:bg-gray-800">
+    <div className="flex items-center justify-between w-full px-6 py-4 bg-background dark:bg-gray-900">
       <div className="flex items-center justify-between gap-2">
-        <Avatar>
-          <AvatarImage src="/images/profile.png" />
-          <AvatarFallback>YQh9Mh3181jzEJ5</AvatarFallback>
-        </Avatar>
-        <div>Portfolio Site</div>
+        <Link href={`/`} className="flex items-center gap-2">
+          <Avatar>
+            <AvatarImage src="/images/profile.png" />
+            <AvatarFallback>YQh9Mh3181jzEJ5</AvatarFallback>
+          </Avatar>
+          <div>Portfolio Site</div>
+        </Link>
       </div>
       <div className="flex items-center justify-between gap-2">
         <Link

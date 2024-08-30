@@ -1,14 +1,15 @@
-import Layout from "./components/layout/Layout";
 import SectionContainer from "./components/common/SectionContainer";
 import PortfolioList from "./components/portfolio/PortfolioList";
 import BlogList from "./components/blog/BlogList";
 import { getPostsData } from "./lib/post";
+import GitHubProfile from "./components/layout/GitHubProfile";
 
 export default async function Home() {
   const allPostsData = await getPostsData();
 
   return (
-    <Layout>
+    <div>
+      <GitHubProfile />
       <SectionContainer
         title="About Me"
         variant="primary"
@@ -32,6 +33,6 @@ export default async function Home() {
       >
         <BlogList posts={allPostsData} />
       </SectionContainer>
-    </Layout>
+    </div>
   );
 }

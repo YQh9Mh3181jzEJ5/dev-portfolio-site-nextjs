@@ -1,39 +1,44 @@
-import React from "react";
-import PortfolioItem from "./portfolioItem";
+"use client";
+
+import { portfolioItems } from "./portfolioData";
+import PortfolioItem from "./PortfolioItem";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const PortfolioList = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mx-auto px-4">
-      <PortfolioItem
-        name="Discord Clone"
-        url="discord-clone"
-        txt="Disocordのクローンアプリです。"
-        badges={["TypeScript", "React", "Tailwind CSS", "Firebase"]}
-      />
-      <PortfolioItem
-        name="ToDo List"
-        url="todo-list-with-shadcn-ui"
-        txt="React / TypeScript / shadcn/ui"
-        badges={["TypeScript", "Next.js", "Tailwind CSS"]}
-      />
-      <PortfolioItem
-        name="ToDo List"
-        url="todo-list-with-shadcn-ui"
-        txt="React / TypeScript / shadcn/ui"
-        badges={["TypeScript", "Next.js", "Tailwind CSS"]}
-      />
-      <PortfolioItem
-        name="ToDo List"
-        url="todo-list-with-shadcn-ui"
-        txt="React / TypeScript / shadcn/ui"
-        badges={["TypeScript", "Next.js", "Tailwind CSS"]}
-      />
-      <PortfolioItem
-        name="ToDo List"
-        url="todo-list-with-shadcn-ui"
-        txt="React / TypeScript / shadcn/ui"
-        badges={["TypeScript", "Next.js", "Tailwind CSS"]}
-      />
+    <div className="container">
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-2 md:-ml-4">
+          {portfolioItems.map((item) => (
+            <CarouselItem
+              key={item.id}
+              className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+            >
+              <PortfolioItem
+                name={item.name}
+                url={item.url}
+                txt={item.txt}
+                badges={item.badges}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="hidden sm:block">
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
+      </Carousel>
     </div>
   );
 };

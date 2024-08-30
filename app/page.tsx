@@ -13,8 +13,7 @@ export default async function Home() {
         title="About Me"
         variant="primary"
         description={`生成AIに衝撃を受け、仕事を継続しながらプログラミング学習を決意。HTML / CSS / JavaScript学習から始まり、主にRuby・Ruby on Rails、Reactを学習。使用教材はUdemy / Progate /ドットインストールが多め。
-          その後、Web系の企業に転職し主にFront-Endのタスクを担当しました。
-
+その後、Web系の企業に転職し主にFront-Endのタスクを担当しました。
 目標はフルスタックエンジニアとして仕事を回せるレベルになること。
 最近はTypeScriptにどっぷりハマっています。`}
       ></SectionContainer>

@@ -32,11 +32,11 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
       }`}
     >
       <div className="w-full max-w-6xl mx-auto px-4">
-        <h2 className="p-6 flex items-center gap-2 w-full max-w-6xl mx-auto justify-center text-3xl font-bold tracking-tighter sm:text-5xl">
+        <h2 className="p-6 flex items-center gap-2 w-full max-w-6xl mx-auto justify-center text-3xl font-bold  sm:text-5xl">
           {getIcon()}
           {title}
         </h2>
-        <p className="text-center text-lg mb-8 text-gray-600 whitespace-pre-wrap max-w-3xl mx-auto">
+        <p className="mb-8 text-gray-500 text-center text-sm md:text-base lg:text-xl !leading-loose">
           {description}
         </p>
       </div>

@@ -17,10 +17,17 @@ type PortfolioItemProps = {
   name: string;
   url: string;
   txt: string;
+  image?: string;
   badges: string[];
 };
 
-const PortfolioItem = ({ name, url, txt, badges }: PortfolioItemProps) => {
+const PortfolioItem = ({
+  name,
+  url,
+  txt,
+  badges,
+  image,
+}: PortfolioItemProps) => {
   return (
     <Card className="overflow-hidden flex flex-col justify-between">
       <CardContent className="p-6">
@@ -32,7 +39,7 @@ const PortfolioItem = ({ name, url, txt, badges }: PortfolioItemProps) => {
         >
           <div className="relative h-48 w-full rounded-md overflow-hidden">
             <Image
-              src={defaultImage}
+              src={image ? image : defaultImage}
               alt="portfolio-image"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

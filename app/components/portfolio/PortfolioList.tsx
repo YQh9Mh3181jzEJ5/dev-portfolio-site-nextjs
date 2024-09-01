@@ -27,6 +27,7 @@ const PortfolioList = () => {
             >
               <PortfolioItem
                 name={item.name}
+                image={item.image}
                 url={item.url}
                 txt={item.txt}
                 badges={item.badges}

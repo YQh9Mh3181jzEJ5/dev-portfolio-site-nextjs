@@ -2,6 +2,7 @@ export type PortfolioItemType = {
   id: string;
   name: string;
   url: string;
+  image?: string;
   txt: string;
   badges: string[];
 };
@@ -20,6 +21,7 @@ export const portfolioItems: PortfolioItemType[] = [
     name: "Spotify Music App",
     url: "music-app",
     txt: "Spotify APIを活用したアプリです。",
+    image: "/images/music-app.jpg",
     badges: ["TypeScript", "React", "Tailwind CSS", "Wavesurfer.js"],
   },
   {
@@ -27,6 +29,7 @@ export const portfolioItems: PortfolioItemType[] = [
     name: "Naruto Library",
     url: "naruto-library",
     txt: "ナルトのキャラクター図鑑です。",
+    image: "/images/naruto-library.jpg",
     badges: ["TypeScript", "React", "Axios", "CSS Modules"],
   },
 
@@ -35,6 +38,7 @@ export const portfolioItems: PortfolioItemType[] = [
     name: "SNS APP",
     url: "sns-app",
     txt: "Supabaseを活用したSNSアプリです。",
+    image: "/images/sns-app.jpg",
     badges: ["TypeScript", "React", "Tailwind CSS", "Supabase"],
   },
 
@@ -43,6 +47,7 @@ export const portfolioItems: PortfolioItemType[] = [
     name: "Todo App",
     url: "todo-list-with-shadcn-ui",
     txt: "Shadcn/uiを活用したTodoアプリです。",
+    image: "/images/todo-app.jpg",
     badges: ["TypeScript", "React", "Jotai", "Shadcn/ui", "ESLint", "Prettier"],
   },
 ];

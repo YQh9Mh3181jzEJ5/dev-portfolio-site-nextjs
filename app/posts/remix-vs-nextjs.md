@@ -1,6 +1,6 @@
 ---
 title: "Firebase vs Supabase: どっちを選ぶべき？"
-date: "2024-01-23"
+date: "2024-05-23"
 thumbnail: "thum_004"
 ---
 

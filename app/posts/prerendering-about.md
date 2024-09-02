@@ -1,6 +1,6 @@
 ---
 title: "Next.jsのプリレンダリングをゼロから解説"
-date: "2022-02-14"
+date: "2024-02-14"
 thumbnail: "thum_002"
 ---
 

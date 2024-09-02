@@ -1,6 +1,6 @@
 ---
 title: "React vs Next.js 🤔 どっちを選ぶ？"
-date: "2022-01-23"
+date: "2024-01-23"
 thumbnail: "thum_003"
 ---
 

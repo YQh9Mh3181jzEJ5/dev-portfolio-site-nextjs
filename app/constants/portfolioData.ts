@@ -11,10 +11,11 @@ export const portfolioItems: PortfolioItemType[] = [
   // TODO: Replace with my own data
   {
     id: "1",
-    name: "Discord Clone",
-    url: "discord-clone",
-    txt: "Discordのクローンアプリです。",
-    badges: ["TypeScript", "React", "Tailwind CSS", "Firebase"],
+    name: "Tech Blog",
+    url: "blog-sample",
+    txt: "個人ブログです。",
+    image: "/images/tech-blog.jpg",
+    badges: ["TypeScript", "Next.js", "Docker", "Firebase", "Tailwind CSS"],
   },
   {
     id: "2",
@@ -49,5 +50,12 @@ export const portfolioItems: PortfolioItemType[] = [
     txt: "Shadcn/uiを活用したTodoアプリです。",
     image: "/images/todo-app.jpg",
     badges: ["TypeScript", "React", "Jotai", "Shadcn/ui", "ESLint", "Prettier"],
+  },
+  {
+    id: "6",
+    name: "Discord Clone",
+    url: "discord-clone",
+    txt: "Discordのクローンアプリです。",
+    badges: ["TypeScript", "React", "Tailwind CSS", "Firebase"],
   },
 ];

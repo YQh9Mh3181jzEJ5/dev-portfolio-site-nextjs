@@ -26,7 +26,7 @@ export default async function Home() {
       <SectionContainer
         title="Blog Posts"
         variant="primary"
-        description="プログラミングの学びや気づき、技術トレンドの考察などを記録していくブログです。。"
+        description="プログラミングの学びや気づき、技術トレンドの考察などを記録していくブログです。"
       >
         <BlogList posts={allPostsData} />
       </SectionContainer>

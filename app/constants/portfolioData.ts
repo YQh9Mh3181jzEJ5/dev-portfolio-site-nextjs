@@ -19,6 +19,14 @@ export const portfolioItems: PortfolioItemType[] = [
   },
   {
     id: "2",
+    name: "WeatherNow",
+    url: "weather-app",
+    txt: "天気予報APIを活用したアプリです。",
+    image: "/images/weather-app.png",
+    badges: ["TypeScript", "React", "Tailwind CSS", "Vercel", "OpenWeather"],
+  },
+  {
+    id: "3",
     name: "Spotify Music App",
     url: "music-app",
     txt: "Spotify APIを活用したアプリです。",
@@ -26,7 +34,7 @@ export const portfolioItems: PortfolioItemType[] = [
     badges: ["TypeScript", "React", "Tailwind CSS", "Wavesurfer.js"],
   },
   {
-    id: "3",
+    id: "4",
     name: "Naruto Library",
     url: "naruto-library",
     txt: "ナルトのキャラクター図鑑です。",
@@ -35,7 +43,7 @@ export const portfolioItems: PortfolioItemType[] = [
   },
 
   {
-    id: "4",
+    id: "5",
     name: "SNS APP",
     url: "sns-app",
     txt: "Supabaseを活用したSNSアプリです。",

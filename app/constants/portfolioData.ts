@@ -12,7 +12,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "1",
     name: "Tech Blog",
-    url: "blog-sample",
+    url: "app-blog-markdown-nextjs",
     txt: "個人ブログです。",
     image: "/images/tech-blog.jpg",
     badges: ["TypeScript", "Next.js", "Docker", "Firebase", "Tailwind CSS"],
@@ -20,7 +20,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "2",
     name: "WeatherNow",
-    url: "weather-app",
+    url: "dev-weather-dashboard-react",
     txt: "天気予報APIを活用したアプリです。",
     image: "/images/weather-app.png",
     badges: ["TypeScript", "React", "Tailwind CSS", "Vercel", "OpenWeather"],
@@ -28,7 +28,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "3",
     name: "Spotify Music App",
-    url: "music-app",
+    url: "dev-music-spotify-api-react",
     txt: "Spotify APIを活用したアプリです。",
     image: "/images/music-app.jpg",
     badges: ["TypeScript", "React", "Tailwind CSS", "Wavesurfer.js"],
@@ -36,7 +36,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "4",
     name: "Naruto Library",
-    url: "naruto-library",
+    url: "dev-naruto-api-react",
     txt: "ナルトのキャラクター図鑑です。",
     image: "/images/naruto-library.jpg",
     badges: ["TypeScript", "React", "Axios", "CSS Modules"],
@@ -45,7 +45,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "5",
     name: "SNS APP",
-    url: "sns-app",
+    url: "dev-sns-login-react",
     txt: "Supabaseを活用したSNSアプリです。",
     image: "/images/sns-app.jpg",
     badges: ["TypeScript", "React", "Tailwind CSS", "Supabase"],
@@ -54,7 +54,7 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "5",
     name: "Todo App",
-    url: "todo-list-with-shadcn-ui",
+    url: "dev-todolist-shadcnui-react",
     txt: "Shadcn/uiを活用したTodoアプリです。",
     image: "/images/todo-app.jpg",
     badges: ["TypeScript", "React", "Jotai", "Shadcn/ui", "ESLint", "Prettier"],
@@ -62,8 +62,16 @@ export const portfolioItems: PortfolioItemType[] = [
   {
     id: "6",
     name: "Discord Clone",
-    url: "discord-clone",
+    url: "tutorial-udemy-discord-clone",
     txt: "Discordのクローンアプリです。",
     badges: ["TypeScript", "React", "Tailwind CSS", "Firebase"],
+  },
+  {
+    id: "7",
+    name: "ポケモン風カウントアップ",
+    url: "learn-levelup-usestate-react-basics",
+    txt: "ポケモン風カウントアップ",
+    image: "/images/pokemon-count-up.png",
+    badges: ["TypeScript", "React", "Tailwind CSS"],
   },
 ];

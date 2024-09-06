@@ -4,7 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC)
 
-このプロジェクトは、私の個人用ポートフォリオとブログサイトです。Next.js を使用して構築されています。
+このプロジェクトは、個人用ポートフォリオとブログサイトです。Next.js を使用して構築されています。
 
 https://next-dev-portfolio-ruby.vercel.app/
 

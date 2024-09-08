@@ -70,8 +70,16 @@ export const portfolioItems: PortfolioItemType[] = [
     id: "7",
     name: "ポケモン風カウントアップ",
     url: "learn-levelup-usestate-react-basics",
-    txt: "ポケモン風カウントアップ",
+    txt: "ポケモン風カウントアップです。useStateの研究の一貫です。",
     image: "/images/pokemon-count-up.png",
     badges: ["TypeScript", "React", "Tailwind CSS"],
+  },
+  {
+    id: "8",
+    name: "何でも画像検索",
+    url: "dev-masonry-layouts-nextjs",
+    txt: "画像検索&表示サイトです。画像を高速に検索します",
+    image: "/images/dev-masonry-layouts-nextjs.png",
+    badges: ["TypeScript", "React", "Tailwind CSS", "TanStack Query"],
   },
 ];

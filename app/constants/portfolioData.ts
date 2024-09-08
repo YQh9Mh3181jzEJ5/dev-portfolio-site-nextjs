@@ -80,6 +80,6 @@ export const portfolioItems: PortfolioItemType[] = [
     url: "dev-masonry-layouts-nextjs",
     txt: "画像検索&表示サイトです。画像を高速に検索します",
     image: "/images/dev-masonry-layouts-nextjs.png",
-    badges: ["TypeScript", "React", "Tailwind CSS", "TanStack Query"],
+    badges: ["TypeScript", "Next.js", "Tailwind CSS", "TanStack Query"],
   },
 ];

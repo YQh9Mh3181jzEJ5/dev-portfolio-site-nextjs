@@ -47,7 +47,7 @@ export const portfolioItems: PortfolioItemType[] = [
     name: "SNS APP",
     url: "dev-sns-login-react",
     txt: "Supabaseを活用したSNSアプリです。",
-    image: "/images/sns-app.jpg",
+    image: "/images/sns-app.png",
     badges: ["TypeScript", "React", "Tailwind CSS", "Supabase"],
   },
 
